@@ -31,9 +31,9 @@ Here:
 		j = 13;
 		while (j >= 0)
 		{
-			if (m[j].id[0] == format[i] && m[j].id[1] == format[i + 1])
+			if (a[j].id[0] == format[i] && a[j].id[1] == format[i + 1])
 			{
-				len += m[j].f(list);
+				len += a[j].f(list);
 				i = i + 2;
 				goto Here;
 			}
