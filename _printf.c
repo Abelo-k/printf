@@ -5,7 +5,6 @@
  * @format: the input format
  * Return: 0
  */
-
 int _printf(const char *format, ...)
 {
 	type a[] = {
@@ -24,7 +23,6 @@ int _printf(const char *format, ...)
 	va_start(list, format);
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
-
 Here:
 	while (format[i] != '\0')
 	{
