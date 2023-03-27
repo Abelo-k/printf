@@ -1,4 +1,4 @@
-## **printf bgroup projrct**
-###**Members**
+## **printf group projrct**
+### **Members**
 - Abel Kebede
 - Simon Asfaw Kebede
