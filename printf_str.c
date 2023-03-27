@@ -23,7 +23,7 @@ int printf_string(va_list val)
 	else
 	{
 		len = _strlen(s);
-		for (i = o; i < len; i++)
+		for (i = 0; i < len; i++)
 			_putchar(s[i]);
 		return (len);
 	}
