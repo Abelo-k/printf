@@ -17,7 +17,7 @@ typedef struct format
 {
 	char *id;
 	int (*f)();
-} convert_match;
+} type;
 
 int printf_pointer(va_list val);
 int printf_hex_aux(unsigned long int num);
