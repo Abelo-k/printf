@@ -18,7 +18,7 @@ int _strlen(char *s)
 	return (count);
 }
 /**
- * _strlen - prints length of a string for constant char
+ * _strlenc - prints length of a string for constant char
  * @s: string
  *
  * Return: count
