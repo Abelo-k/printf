@@ -10,7 +10,7 @@ int printf_dec(va_list list)
 	int num, last = n % 10, digit;
 	int  i = 1;
 	int exp = 1;
-	
+
 	n = n / 10;
 	num = n;
 	if (last < 0)
