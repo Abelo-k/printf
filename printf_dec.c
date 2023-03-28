@@ -1,12 +1,42 @@
 #include "main.h"
-
 /**
- * printf_dec: prings a decimal
- * @ val: value
+ * printf_dec - prints decimal
+ * @list: argument to print
+ * Return: number of characters printed
  */
-
-int printf_dec(va_list args)
+int printf_dec(va_list list)
 {
-	_putchar(args);
-	return (0);
+	int n = va_arg(list, int);
+	int num, last = n % 10, digit;
+	int  i = 1;
+	int exp = 1;
+	n = n / 10;
+	num = n;
+	if (last < 0)
+	{
+		_putchar('-');
+		num = -num;
+		n = -n;
+		last = -last;
+		i++;
+	}
+	if (num > 0)
+	{
+		while (num / 10 != 0)
+		{
+			exp = exp * 10;
+			num = num / 10;
+		}
+		num = n;
+		while (exp > 0)
+		{
+			digit = num / exp;
+			_putchar(digit + '0');
+			num = num - (digit * exp);
+			exp = exp / 10;
+			i++;
+		}
+	}
+	_putchar(last + '0');
+	return (i);
 }
