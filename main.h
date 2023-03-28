@@ -1,5 +1,6 @@
-#ifndef main_h
-#define main_h
+#ifndef MAIN_H
+#define MAIN_H
+
 #include <stdlib.h>
 #include <stdarg.h>
 #include <stdio.h>
@@ -17,7 +18,7 @@ typedef struct format
 {
 	char *id;
 	int (*f)();
-} type;
+} _type;
 
 int printf_pointer(va_list val);
 int printf_hex_aux(unsigned long int num);
