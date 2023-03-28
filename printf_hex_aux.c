@@ -10,6 +10,7 @@ int printf_hex_aux(unsigned long int num)
 	long int *array;
 	long int counter = 0;
 	unsigned long int temp = num;
+
 	while (num / 16 != 0)
 	{
 		num /= 16;
