@@ -9,7 +9,7 @@
 int printf_bin(va_list list)
 {
 	int flag = 0, count = 0, i, a = 1, b;
-	unsigned int num = var_arg(list, unsigned int);
+	unsigned int num = va_arg(list, unsigned int);
 	unsigned int p;
 
 	for (i = 0; i < 32; i++)
